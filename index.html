@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Careers Hub - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>🚀 Tech Careers Hub</h1>
+            <p class="subtitle">Discover amazing opportunities in tech</p>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <div class="search-wrapper">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-bar" 
+                    placeholder="Search by role, keyword, or skill..."
+                >
+            </div>
+            
+            <div class="category-wrapper">
+                <select id="categoryFilter" class="category-dropdown">
+                    <option value="all">All Categories</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="design">Design</option>
+                    <option value="data">Data</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Job Cards Grid -->
+        <div class="jobs-grid" id="jobsGrid">
+            <!-- Job cards will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <p>😔 No jobs found matching your criteria</p>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="jobModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Job details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
